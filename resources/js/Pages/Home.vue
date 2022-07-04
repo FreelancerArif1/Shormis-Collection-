@@ -7,8 +7,8 @@
 <template>
 <layout :setting ="setting" :services="services">
 <div>
-<Head title="Home | DITS">
-  <title>Home | DITS </title>
+<Head title="Home | Simen">
+  <title>Home | Simen </title>
   <meta name="description" content="Welcome To Dhaka It Solution">
 </Head>
 <div class="page_wrapper">
@@ -706,7 +706,8 @@
                         <div role="tabpanel" class="tab-pane active" id="chair">
                             <div  class="taps-slider1 products-grid row style_grid owl-carousel owl-theme owl-loaded">
                                 <div class="taps-slider">
-                                    <div class="item col-lg-3 col-md-4 col-sm-4 col-xs-6 col-phone-12">
+                                        <div class="item col-lg-3 col-md-4 col-sm-4 col-xs-6 col-phone-12">
+                                            
                                             <div class="item-inner">
                                                 <div class="prd">
                                                     <div class="item-img clearfix">
@@ -714,20 +715,18 @@
                                                         <span class="ico-product ico-new">New</span>
                                                         <span class="ico-product ico-sale">Sale</span>
                                                     </div>
-                                                        <a class="product-image have-additional"
-                                                        title="Modular Modern"
-                                                        href="detail.html">
+                                                    <Link :href="route('single.product', 'slug-slug-slug-slug')" class="product-image have-additional" title="Modular Modern">
                                                         <span class="img-main">
                                                         <img src="/assets/images/products/7.jpg" alt="">
                                                         </span>
-                                                        </a>
+                                                    </Link>
                                                     </div>
                                                     <div class="item-info">
                                                         <div class="info-inner">
                                                             <div class="item-title">
                                                                 <a title="Modular Modern"
                                                                 href="detail.html">
-                                                                    Modular Modern </a>
+                                                                    Modular Modern New</a>
                                                             </div>
                                                             <div class="item-price">
                                                                 <div class="price-box">
@@ -778,6 +777,8 @@
                                                     </div>
                                                 </div>
                                             </div>
+                                            
+
                                         </div>
 
                                         <div class="item col-lg-3 col-md-4 col-sm-4 col-xs-6 col-phone-12">
@@ -1277,7 +1278,7 @@
                                     </div>
 
                                     <div class="taps-slider">
-                                    <div class="item col-lg-3 col-md-4 col-sm-4 col-xs-6 col-phone-12">
+                                        <div class="item col-lg-3 col-md-4 col-sm-4 col-xs-6 col-phone-12">
                                             <div class="item-inner">
                                                 <div class="prd">
                                                     <div class="item-img clearfix">
@@ -1852,7 +1853,7 @@
                         <div role="tabpanel" class="tab-pane" id="table">
                             <div  class="taps-slider1 products-grid row style_grid owl-carousel owl-theme owl-loaded">
                                 <div class="taps-slider">
-                                    <div class="item col-lg-3 col-md-4 col-sm-4 col-xs-6 col-phone-12">
+                                        <div class="item col-lg-3 col-md-4 col-sm-4 col-xs-6 col-phone-12">
                                             <div class="item-inner">
                                                 <div class="prd">
                                                     <div class="item-img clearfix">
@@ -2414,7 +2415,7 @@
                                         </div>
                                     </div>
                                     <div class="taps-slider">
-                                    <div class="item col-lg-3 col-md-4 col-sm-4 col-xs-6 col-phone-12">
+                                        <div class="item col-lg-3 col-md-4 col-sm-4 col-xs-6 col-phone-12">
                                             <div class="item-inner">
                                                 <div class="prd">
                                                     <div class="item-img clearfix">
@@ -2981,7 +2982,7 @@
                         <div role="tabpanel" class="tab-pane" id="ourdoor">
                             <div  class="taps-slider1 products-grid row style_grid owl-carousel owl-theme owl-loaded">
                                 <div class="taps-slider">
-                                    <div class="item col-lg-3 col-md-4 col-sm-4 col-xs-6 col-phone-12">
+                                        <div class="item col-lg-3 col-md-4 col-sm-4 col-xs-6 col-phone-12">
                                             <div class="item-inner">
                                                 <div class="prd">
                                                     <div class="item-img clearfix">
@@ -3552,7 +3553,7 @@
                                     </div>
 
                                     <div class="taps-slider">
-                                    <div class="item col-lg-3 col-md-4 col-sm-4 col-xs-6 col-phone-12">
+                                        <div class="item col-lg-3 col-md-4 col-sm-4 col-xs-6 col-phone-12">
                                             <div class="item-inner">
                                                 <div class="prd">
                                                     <div class="item-img clearfix">

@@ -98,9 +98,8 @@
             <div class="container_in">
                 <div class="row">
                     <h1 id="logo" class=" responsv col-md-3">
-                        <a href="index2.html" title="Magento Commerce">
-                            <img alt="" src="/assets/images/logo.jpg"> 
-                        </a>
+                        <Link :href="route('home')" class="menu-title-lv0 pd-menu116" title="Magento Commerce"> <img alt="" src="/assets/images/logo.jpg"> </Link>
+  
                     </h1>
                     <div class="col-md-9 policy">
                         <div class="row">
@@ -145,9 +144,7 @@
                     <div id="sns_custommenu" class="visible-md visible-lg">
                         <ul class="mainnav">
                             <li class="level0 custom-item active">
-                                <a class="menu-title-lv0 pd-menu116" href="index2.html" target="_self">
-                                    <span class="title">Home</span>
-                                </a>
+                                 <Link :href="route('home')" class="menu-title-lv0 pd-menu116"> <span class="title">Home</span></Link>
                             </li>
                             <li class="level0 nav-1 no-group first drop-submenu parent">
                                 <a class=" menu-title-lv0" href="listing-grid.html">
@@ -315,9 +312,7 @@
                                 </div>
                             </li>
                             <li class="level0 nav-2 no-group drop-submenu parent">
-                                <a class=" menu-title-lv0" href="#">
-                                    <span class="title">All products</span>
-                                </a>
+                                 <Link :href="route('all.product')" class="menu-title-lv0"> <span class="title">All products</span></Link>
                                 <div class="wrap_submenu">
                                     <ul class="level0">
                                         <li class="level1 nav-1-1 first">
@@ -758,9 +753,7 @@
                             <ul class="mainnav">
                                 <li class="level0 custom-item">
                                     <div class="accr_header">
-                                        <a class="menu-title-lv0" href="index.html">
-                                            <span class="title">Home</span>
-                                        </a>
+                                         <Link :href="route('home')" class="menu-title-lv0"> <span class="title">Home</span></Link>
                                     </div>
                                 </li>
 
@@ -774,9 +767,7 @@
 
                                 <li class="level0 nav-6 parent">
                                     <div class="accr_header">
-                                        <a class=" menu-title-lv0" href="#">
-                                            <span>All products</span>
-                                        </a>
+                                        <Link :href="route('home')" class="menu-title-lv0" title="Magento Commerce"> <span>All products</span> </Link>
                                         <span class="btn_accor">
                                             
                                         </span>

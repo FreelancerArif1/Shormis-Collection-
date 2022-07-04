@@ -256,6 +256,11 @@ class HomeController extends Controller{
         ]);
     }
     
+    public function notFoundPage(){
+        return Inertia::render('Components/404', [
+        ]);
+    }
+    
 
 
 }

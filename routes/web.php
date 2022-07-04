@@ -4,6 +4,8 @@ use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ProductController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -72,7 +74,7 @@ Route::get('/service/single/{id}', [HomeController::class, 'singleService'])->na
 Route::post('/message', [HomeController::class, 'message'])->name('message');
 
 Route::get('/services', [HomeController::class, 'services'])->name('services');
-
+Route::get('/404', [HomeController::class, 'notFoundPage'])->name('not.found');
 Route::post('/message', [HomeController::class, 'message'])->name('message');
 Route::get('/about-us', [HomeController::class, 'about'])->name('about');
 Route::get('/contact-us', [HomeController::class, 'contact'])->name('contact');
@@ -82,3 +84,13 @@ Route::get('/our-portfolio', [HomeController::class, 'portfolio'])->name('portfo
 Route::get('/get-category-portfolio/{id}', [HomeController::class, 'category_portfolio'])->name('category.portfolio');
 Route::get('/privacy-policy', [HomeController::class, 'privacyPolicy'])->name('privacy-policy');
 Route::get('/terms-and-conditions', [HomeController::class, 'termsConditions'])->name('terms-and-conditions');
+
+
+
+//Product
+Route::get('/single-product/{slug}', [ProductController::class, 'SingleProduct'])->name('single.product');
+Route::get('/products', [ProductController::class, 'allProduct'])->name('all.product');
+
+
+//Cart
+Route::get('/cart', [ProductController::class, 'cartPage'])->name('cart.page');
